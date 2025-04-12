@@ -1,0 +1,20 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='learning-project.article', async=true}"></sly>
+
+<sly data-sly-use.model="com.adobe.learning.project.core.models.Article">
+    <div class="articles-list">
+        <ul data-sly-list.article="${model.articles}">
+            <li class="article-item">
+                <div class="article-image">
+                    <img src="${article.image}" alt="${article.name}" loading="lazy"/>
+                </div>
+                <div class="article-content">
+                    <h3 class="article-title">
+                        <a href="${article.path}.html">${article.name}</a>
+                    </h3>
+                    <p class="article-description">${article.description}</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</sly>

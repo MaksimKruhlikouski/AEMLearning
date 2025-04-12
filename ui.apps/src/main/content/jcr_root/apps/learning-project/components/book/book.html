@@ -1,0 +1,10 @@
+<sly data-sly-use.book="com.adobe.learning.project.core.models.BookModel">
+    <div class="book-component">
+        <h2>${book.title} - ${book.firstname} ${book.lastname}</h2>
+        <ul>
+            <sly data-sly-list.bookItem="${book.books}">
+                <li>${bookItem.name} - ${bookItem.dateOfCreation}</li>
+            </sly>
+        </ul>
+    </div>
+</sly>

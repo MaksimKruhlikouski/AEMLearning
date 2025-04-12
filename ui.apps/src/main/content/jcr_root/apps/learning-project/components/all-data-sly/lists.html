@@ -1,0 +1,10 @@
+<template data-sly-template.lists="${@ surname, patronymic, data}">
+    <ul>
+        <sly data-sly-list.listItem="${data.listNames}">
+            <li>${listItem}</li>
+        </sly>
+    </ul>
+    <ul>
+        <li data-sly-repeat.name="${data.listNames}">${name} ${surname} ${patronymic}</li>
+    </ul>
+</template>

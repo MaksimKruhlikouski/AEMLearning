@@ -1,0 +1,15 @@
+<sly data-sly-use.data="com.adobe.learning.project.core.models.AllDataSly">
+    <sly data-sly-set.surname="Kruhlikouski"></sly>
+    <sly data-sly-set.patronymic="Alyaksandravich"></sly>
+    <h2 data-sly-text="${'<i> Italic text </i>' @ context = 'html'}"></h2>
+    <h2 data-sly-attribute.class="${data.attributeName}">Text with attribute</h2>
+    <h2 data-sly-element="${data.elementName}">Text with changed HTML tag</h2>
+    <sly data-sly-include="test.html"></sly>
+    <sly data-sly-use.template="lists.html">
+        <sly data-sly-call="${template.lists @ surname=surname, patronymic=patronymic, data=data}"></sly>
+    </sly>
+    <sly data-sly-resource="${'/content/learning-project/us/en/sling-injectors/jcr:content/root/responsivegrid/helloworld_2065634205' @ resourceType='learning-project/components/helloworld'}"></sly>
+    <div style="color: #2020e0" data-sly-unwrap="${!wcmmode.edit}">
+        <p>This text is displayed all the time, but changes color in edit mode</p>
+    </div>
+</sly>

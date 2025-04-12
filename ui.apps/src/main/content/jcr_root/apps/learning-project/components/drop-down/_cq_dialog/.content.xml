@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Drop Down Component Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <dropdown jcr:primaryType="nt:unstructured"
+                                      sling:resourceType="granite/ui/components/foundation/form/select"
+                                      fieldLabel="Game type"
+                                      emptyText="Game Type"
+                                      class="cq-dialog-dropdown-showhide"
+                                      cq-dialog-dropdown-showhide-target=".gametype"
+                                      name="./gameType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <slot
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Slot"
+                                            value="slot"
+                                            selected="{Boolean}true"/>
+                                    <casino
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Casino"
+                                            value="casino"/>
+                                    <betting
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Betting"
+                                            value="betting"/>
+                                </items>
+                            </dropdown>
+                            <slotMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    class="hide gametype foundation-layout-util-vmargin"
+                                    showhidetargetvalue="slot">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <slotText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/text"
+                                            text="This text appears only for slot"/>
+                                </items>
+                            </slotMessage>
+                            <casinoMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    class="hide gametype foundation-layout-util-vmargin"
+                                    showhidetargetvalue="casino">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <casinoText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/text"
+                                            text="This text appears only for casino"/>
+                                </items>
+                            </casinoMessage>
+                            <bettingMessage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/container"
+                                    class="hide gametype foundation-layout-util-vmargin"
+                                    showhidetargetvalue="betting">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <bettingText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/text"
+                                            text="This text appears only for betting"/>
+                                </items>
+                            </bettingMessage>
+                            <dynamicDropdown
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Dynamic Dropdown"
+                                    name="./dynamicOption"
+                                    emptyText="Select an option">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="learning-project/dropdown/datasource"/>
+                            </dynamicDropdown>
+                        </items>
+                    </column>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,17 @@
+<div data-sly-use.model="com.adobe.learning.project.core.models.AllSlingInjectors">
+    <h2>${model.pageTitle} received by script</h2>
+    <h2>${model.titleViaSelf} received by Self Annotation</h2>
+    <h2>${model.titleViaRR} received by RR</h2>
+    <h2>${model.manualPageTitle}</h2>
+    <ul>
+        <sly data-sly-list.car="${model.carInfo}">
+            <li>${car}</li>
+        </sly>
+    </ul>
+    <h2>${model.attr}</h2>
+    <ul>
+        <sly data-sly-list.title="${model.pagesTitle}">
+            <li>${title}</li>
+        </sly>
+    </ul>
+</div>

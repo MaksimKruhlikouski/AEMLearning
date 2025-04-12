@@ -1,0 +1,50 @@
+.articles-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.articles-list .article-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    gap: 16px;
+}
+
+.articles-list .article-item .article-image {
+    flex: 0 0 120px;
+}
+
+.articles-list .article-item .article-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.articles-list .article-item .article-content {
+    flex: 1;
+}
+
+.articles-list .article-item .article-content .article-title {
+    margin: 0 0 8px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.articles-list .article-item .article-content .article-title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.articles-list .article-item .article-content .article-title a:hover {
+    color: #0066cc;
+    text-decoration: underline;
+}
+
+.articles-list .article-item .article-content .article-description {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
