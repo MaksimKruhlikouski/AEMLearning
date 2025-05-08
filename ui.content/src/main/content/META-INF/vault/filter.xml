@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/learning-project" mode="merge"/>
+    <filter root="/conf/learning-project/settings/wcm/policies" mode="update"/>
+    <filter root="/conf/learning-project" mode="update"/>
     <filter root="/content/learning-project" mode="merge"/>
     <filter root="/content/dam/learning-project" mode="merge">
         <exclude pattern="/content/dam/learning-project(/.*)?"/>

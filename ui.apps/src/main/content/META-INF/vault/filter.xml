@@ -2,5 +2,9 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/learning-project/clientlibs"/>
     <filter root="/apps/learning-project/components"/>
+    <filter root="/apps/learning-project/components/structure"/>
     <filter root="/apps/learning-project/i18n"/>
+    <filter root="/apps/learning-project/settings"/>
+    <filter root="/apps/learning-project/templates"/>
+    <filter root="/apps/settings" mode="update"/>
 </workspaceFilter>

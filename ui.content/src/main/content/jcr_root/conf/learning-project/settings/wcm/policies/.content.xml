@@ -303,6 +303,14 @@
                         </assetToComponentMapping>
                     </cq:authoring>
                 </policy_1575040440977>
+                <policy_1745222932446
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Simple Policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[group:Learning Project - Content,group:Mobile]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1745222932446>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -338,6 +346,22 @@
                     clientlibsJsHead="learning-project.dependencies">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy>
+                <policy_1746604869311
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Simple page policy"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    clientlibs="[learning-project.simple-style-page-policy]"
+                    clientlibsAsync="false">
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0 cq:styleGroupLabel="Text color" jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0 cq:styleClasses="grey-color" cq:styleId="1746609722228" cq:styleLabel="Grey Color" jcr:primaryType="nt:unstructured"/>
+                                <item1 cq:styleClasses="yellow-color" cq:styleId="1746609725011" cq:styleLabel="Yellow color" jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1746604869311>
             </page>
         </components>
     </learning-project>
