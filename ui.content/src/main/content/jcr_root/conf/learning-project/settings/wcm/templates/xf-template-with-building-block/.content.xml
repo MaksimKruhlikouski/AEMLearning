@@ -2,9 +2,8 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
-        cq:templateType="/conf/learning-project/settings/wcm/template-types/simple-template-type"
-        jcr:description="This temlate was created using simple template type"
+        cq:templateType="/conf/learning-project/settings/wcm/template-types/xf"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Simple editor template"
+        jcr:title="XF Template with Building Block"
         status="enabled"/>
 </jcr:root>

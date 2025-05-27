@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/conf/learning-project/settings/wcm/policies" mode="update"/>
+    <filter root="/content/dam/learning-project/content-fragments" mode="replace"/>
     <filter root="/conf/learning-project" mode="update"/>
     <filter root="/content/learning-project" mode="merge"/>
     <filter root="/content/dam/learning-project" mode="merge">
@@ -8,5 +9,5 @@
         <include pattern="/content/dam/learning-project/jcr:content(/.*)?"/>
     </filter>
     <filter root="/content/dam/learning-project/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/learning-project" mode="merge"/>
+    <filter root="/content/experience-fragments/learning-project" mode="update"/>
 </workspaceFilter>
