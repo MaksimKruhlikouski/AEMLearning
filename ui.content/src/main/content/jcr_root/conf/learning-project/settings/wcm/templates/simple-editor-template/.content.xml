@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Template">
     <jcr:content
         cq:templateType="/conf/learning-project/settings/wcm/template-types/simple-template-type"
-        jcr:description="This temlate was created using simple template type"
+        jcr:description="This template was created using simple template type"
         jcr:primaryType="cq:PageContent"
         jcr:title="Simple editor template"
         status="enabled"/>
